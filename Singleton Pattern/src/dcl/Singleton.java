@@ -1,19 +1,23 @@
 package dcl;
 
 public class Singleton {
-    private volatile static Singleton singleton;
+    private volatile static Singleton instance;
 
     private Singleton() {
     }
 
-    public static Singleton getSingleton() {
-        if (singleton == null) {
+    public static Singleton getInstance() {
+        if (instance == null) {
             synchronized (Singleton.class) {
-                if (singleton == null) {
-                    singleton = new Singleton();
+                if (instance == null) {
+                    instance = new Singleton();
                 }
             }
         }
-        return singleton;
+        return instance;
+    }
+
+    public void showMessage() {
+        System.out.println("Hello World!");
     }
 }

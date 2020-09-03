@@ -17,7 +17,7 @@ public class NameRepository implements Container {
 
         @Override
         public Object next() {
-            if (this.hasNext()) {
+            if (hasNext()) {
                 return names[index++];
             }
             return null;

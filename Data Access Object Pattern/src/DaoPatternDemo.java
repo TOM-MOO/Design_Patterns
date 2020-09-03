@@ -15,6 +15,6 @@ public class DaoPatternDemo {
 
         //获取学生
         Student student1 = studentDao.getStudent(0);
-        System.out.println("Student: [RollNo : " + student.getRollNo() + ", Name : " + student.getName() + "]");
+        System.out.println("Student: [RollNo : " + student1.getRollNo() + ", Name : " + student1.getName() + "]");
     }
 }

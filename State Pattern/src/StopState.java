@@ -6,6 +6,7 @@ public class StopState implements State {
         context.setState(this);
     }
 
+    @Override
     public String toString() {
         return "Stop State";
     }

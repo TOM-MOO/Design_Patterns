@@ -3,7 +3,7 @@ public abstract class Shape implements Cloneable {
     private String id;
     protected String type;
 
-    abstract void draw();
+    public abstract void draw();
 
     public String getType() {
         return type;
@@ -17,6 +17,7 @@ public abstract class Shape implements Cloneable {
         this.id = id;
     }
 
+    @Override
     public Object clone() {
         Object clone = null;
         try {

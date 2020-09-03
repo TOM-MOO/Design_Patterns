@@ -14,7 +14,7 @@ public class TransferObjectPatternDemo {
         studentBusinessObject.updateStudent(student);
 
         //获取学生
-        StudentVO studentVO = studentBusinessObject.getStudent(0);
+        student = studentBusinessObject.getStudent(0);
         System.out.println("Student: [RollNo : " + student.getRollNo() + ", Name : " + student.getName() + "]");
     }
 }

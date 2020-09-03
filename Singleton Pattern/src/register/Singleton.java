@@ -11,4 +11,8 @@ public class Singleton {
     public static Singleton getInstance() {
         return SingletonHolder.INSTANCE;
     }
+
+    public void showMessage() {
+        System.out.println("Hello World!");
+    }
 }

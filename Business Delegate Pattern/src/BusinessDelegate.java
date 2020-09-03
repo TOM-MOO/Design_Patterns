@@ -1,5 +1,6 @@
 public class BusinessDelegate {
     private final BusinessLookUp lookupService = new BusinessLookUp();
+    private BusinessService businessService;
     private String serviceType;
 
     public void setServiceType(String serviceType) {
@@ -7,7 +8,7 @@ public class BusinessDelegate {
     }
 
     public void doTask() {
-        BusinessService businessService = lookupService.getBusinessService(serviceType);
+        businessService = lookupService.getBusinessService(serviceType);
         businessService.doProcessing();
     }
 }
